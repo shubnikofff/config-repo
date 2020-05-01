@@ -1,2 +1,2 @@
 # config-repo
-Contains configurations of different applications
+Configuration repository for microservices
