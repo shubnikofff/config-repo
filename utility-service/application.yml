@@ -3,9 +3,15 @@ spring:
   batch:
     job:
       enabled: false
+    initialize-schema: always
 
-#  data:
-#    mongodb:
-#      uri: mongodb://localhost
-#      port: 27017
-#      database: library
+  datasource:
+    url: jdbc:postgresql://bb8us1xbr3qlpm8ejbza-postgresql.services.clever-cloud.com:5432/bb8us1xbr3qlpm8ejbza
+    username: urkui0szfsga92nhenkm
+    password: "{cipher}9b6638b90dd2a72c2fbd2c6ab58935a6fd20b0c840769750898ea5c4453a3ac2769ca2501fdce238772fb8d8ca2398ad"
+
+  data:
+    mongodb:
+      uri: "{cipher}9acc1582748fe0f8b050914d8ee028a7657677553ffc204ee08b8613203f0e1b15bf3dcc79947e0a2f4b0345ddcb151a76e7745101fd0ce6fe2b6f9f927c7437e34bb4c6b9195775ee697c8b208c942d59656fff30bb8d4fac783de3f65e955ad565176a9b115623bbb8f8b217edc4bf"
+      port: 27017
+      database: library
