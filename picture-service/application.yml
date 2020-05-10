@@ -3,7 +3,7 @@ spring:
     mongodb:
       uri: "{cipher}9acc1582748fe0f8b050914d8ee028a7657677553ffc204ee08b8613203f0e1b15bf3dcc79947e0a2f4b0345ddcb151a76e7745101fd0ce6fe2b6f9f927c7437e34bb4c6b9195775ee697c8b208c942d59656fff30bb8d4fac783de3f65e955ad565176a9b115623bbb8f8b217edc4bf"
       port: 27017
-      database: book-registry
+      database: pictures
 
 eureka:
   instance:
