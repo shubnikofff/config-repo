@@ -1,0 +1,25 @@
+eureka:
+  instance:
+    instance-id: "${spring.application.name}:${server.port}"
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+zuul:
+  prefix: /api
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 10000
+  routes:
+    composite-service: /cs/**
+    book-registry: /book/**
+    review-service: /comment/**
+    picture-service: /picture/**
