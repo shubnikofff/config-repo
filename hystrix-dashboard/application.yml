@@ -8,3 +8,7 @@ eureka:
   instance:
     instance-id: "${spring.application.name}:${server.port}"
     prefer-ip-address: true
+
+turbine:
+  app-config: book-registry,composite-service,review-service,picture-service
+  cluster-name-expression: new String("default")
