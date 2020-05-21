@@ -1,0 +1,22 @@
+eureka:
+  instance:
+    instance-id: "${spring.application.name}:${server.port}"
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+feign:
+  hystrix:
+    enabled: true
+
+application:
+  oauth2:
+    client-id: "open-shelf"
+    client-secret: "secret"
+    signing-key: 987654321
+    access-token-validity-seconds: 10800
+    refresh-token-validity-seconds: -1
