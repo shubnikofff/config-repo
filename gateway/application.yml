@@ -15,6 +15,7 @@ ribbon:
 
 zuul:
   prefix: /api
+  sensitive-headers: Cookie,Set-Cookie
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 10000
