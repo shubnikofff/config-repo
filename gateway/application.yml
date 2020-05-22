@@ -19,8 +19,15 @@ zuul:
     connect-timeout-millis: 10000
     socket-timeout-millis: 10000
   routes:
-    composite-service: /cs/**
+    authorization-server: /auth/**
     book-registry: /book/**
-    review-service: /comment/**
+    composite-service: /cs/**
     picture-service: /picture/**
+    review-service: /comment/**
     user-registry: /user/**
+
+application:
+  oauth2:
+    client-id: "open-shelf"
+    client-secret: "secret"
+    signing-key: 987654321
