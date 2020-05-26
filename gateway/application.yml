@@ -23,6 +23,7 @@ zuul:
     authorization-server: /auth/**
     book-registry: /book/**
     composite-service: /cs/**
+    exchange-service: /exchange/**
     picture-service: /picture/**
     review-service: /comment/**
     user-registry: /user/**
