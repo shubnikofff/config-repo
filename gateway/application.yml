@@ -21,7 +21,7 @@ zuul:
     socket-timeout-millis: 10000
   routes:
     authorization-server: /auth/**
-    book-registry: /book/**
+    book-registry: /library/**
     composite-service: /cs/**
     exchange-service: /exchange/**
     picture-service: /picture/**
